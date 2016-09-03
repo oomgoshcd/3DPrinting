@@ -1,7 +1,7 @@
 // author     : Charles Fico
 // Format     : OpenJSCAD
 // tags       : Electronics,screwdriver
-// file       : POT adjuster
+// file       : ThomasOnTheGoTrackTestMale.jscad
 
 function main() {
     return union(
@@ -18,13 +18,19 @@ function main() {
         translate([0,15.25,6]),
         //Right Track
         cube([15,11.25,3.5]).
-        translate([0,22.25,6])
+        translate([0,22.75,6])
         ),
+    //Track Tester
+    /*
+    cube([2,2,6]).
+    translate([-2,20.75,3]),
+      */
     //Male End
       union(
           cube([2,3.5,6]).
           translate([-2,16,0]),
-          
+          cylinder({d: 5.5, h: 6}).
+          translate([-4,17.75,0])
           )
    )
 }
