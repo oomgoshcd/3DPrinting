@@ -26,7 +26,13 @@ function main() {
         cylinder({d:5, h:6}).
         translate([10.5,18,0]),
         cube([3.5,3.5,6]).
-        translate([12,16.25,0])
+        translate([12,16.25,0]),
+        //Female relief left
+        cube([10,1.75,6]).
+        translate([5,11.5,0]),
+        //Female relief right
+        cube([10,1.75,6]).
+        translate([5,22.75,0])
         ),
     //Track Tester
     /*
