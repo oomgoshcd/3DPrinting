@@ -19,22 +19,23 @@ function main() {
         //Right Track
         cube([15,11.25,3.5]).
         translate([0,22.75,6]),
+        //Female End
         cylinder({d:5, h:6}).
         translate([10.5,18,0]),
-        cube([2.5,3.5,6]).
-        translate([13,15,0])
+        cube([3.5,3.5,6]).
+        translate([12,16.25,0])
         ),
     //Track Tester
-    /*
-    cube([2,2,6]).
-    translate([-2,20.75,3]),
-      */
+    
+    cube([2,1,6]).
+    translate([14,19.75,3]),
+      
     //Male End
       union(
           cube([2,3.5,6]).
-          translate([-2,16,0]),
+          translate([0,0,0]),
           cylinder({d: 5.25, h: 6}).
-          translate([-4,17.75,0])
-          )
+          translate([-2,1.75,0])
+          ).translate([-2,16.25,0])
    )
 }
