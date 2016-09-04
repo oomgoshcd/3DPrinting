@@ -1,7 +1,7 @@
 // author     : Charles Fico
 // Format     : OpenJSCAD
 // tags       : Electronics,screwdriver
-// file       : ThomasOnTheGoTrackTestMale.jscad
+// file       : ThomasOnTheGoTrackTestMaleFemaleSkinny.jscad
 
 function main() {
     return union(
