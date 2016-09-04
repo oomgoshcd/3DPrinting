@@ -21,7 +21,7 @@ function femaleEnd(trackLength){
         translate([trackLength-10,11.5,0]),
         //Female relief right
         cube([10,1.75,6]).
-        translate([trackLength-10,22.75,0])
+        translate([trackLength-10,22.75,0]),
         //Inner track removal for female connector (provides more flex)
         cube([12,12,3]).
         translate([trackLength-10,12,6])
