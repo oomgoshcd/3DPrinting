@@ -55,18 +55,6 @@ function main(params) {
         cube([trackLength,7.75,3.5]).
         translate([0,22.75,6]),
         femaleEnd(trackLength)
-        /*
-        ,cylinder({d:5.5, h:6}).
-        translate([11,18,0]),
-        cube([3.5,3.5,6]).
-        translate([12,16.25,0]),
-        //Female relief left
-        cube([10,1.75,6]).
-        translate([trackLength-10,11.5,0]),
-        //Female relief right
-        cube([10,1.75,6]).
-        translate([trackLength-10,22.75,0])
-        */
         )
         ,maleEnd()
         
