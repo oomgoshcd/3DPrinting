@@ -16,6 +16,9 @@ function main() {
         //Center Track
         cube([15,5.5,3.5]).
         translate([0,15.25,6]),
+        //Shorten Center Track
+        cube([15,10,3.5]).
+        translate([0,13,7.25]),
         //Right Track
         cube([15,11.25,3.5]).
         translate([0,22.75,6]),
@@ -26,10 +29,10 @@ function main() {
         translate([12,16.25,0])
         ),
     //Track Tester
-    
-    cube([2,1,6]).
-    translate([14,19.75,3]),
-      
+    /*
+    cube([2,1,1.25]).
+    translate([14,19.75,6]),
+    */  
     //Male End
       union(
           cube([2,3.5,6]).
