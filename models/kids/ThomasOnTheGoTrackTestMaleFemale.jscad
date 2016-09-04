@@ -23,8 +23,8 @@ function main() {
         cube([15,11.25,3.5]).
         translate([0,22.75,6]),
         //Female End
-        cylinder({d:5, h:6}).
-        translate([10.5,18,0]),
+        cylinder({d:5.5, h:6}).
+        translate([11,18,0]),
         cube([3.5,3.5,6]).
         translate([12,16.25,0]),
         //Female relief left
