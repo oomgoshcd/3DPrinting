@@ -12,7 +12,7 @@ function getParameterDefinitions() {
 function femaleEnd(trackLength){
     //Female End
     return union(
-        cylinder({d:5.5, h:6}).
+        cylinder({d:5.5, h:10}).
         translate([trackLength-4,18,0]),
         cube([3.5,3.5,6]).
         translate([trackLength-3,16.25,0]),
@@ -22,6 +22,9 @@ function femaleEnd(trackLength){
         //Female relief right
         cube([10,1.75,6]).
         translate([trackLength-10,22.75,0])
+        //Inner track removal for female connector (provides more flex)
+        cube([12,12,3]).
+        translate([trackLength-10,12,6])
         )
 }
 
