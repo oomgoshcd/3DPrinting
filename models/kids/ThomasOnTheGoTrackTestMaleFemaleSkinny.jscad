@@ -11,8 +11,8 @@ function main() {
         translate([0,3.5,0]).
         setColor([0,0,255]),
         //Left Track
-        cube([15,11.25,3.5]).
-        translate([0,2,6]),
+        cube([15,7.75,3.5]).
+        translate([0,5.5,6]),
         //Center Track
         cube([15,5.5,3.5]).
         translate([0,15.25,6]),
@@ -20,7 +20,7 @@ function main() {
         cube([15,10,3.5]).
         translate([0,13,7.25]),
         //Right Track
-        cube([15,11.25,3.5]).
+        cube([15,7.75,3.5]).
         translate([0,22.75,6]),
         //Female End
         cylinder({d:5, h:6}).
@@ -30,8 +30,8 @@ function main() {
         ),
     //Track Tester
     
-    cube([2,25,1.25]).
-    translate([14,5.5,6]),
+    cube([2,2,1.25]).
+    translate([14,20.75,6]),
     
     //Male End
       union(
