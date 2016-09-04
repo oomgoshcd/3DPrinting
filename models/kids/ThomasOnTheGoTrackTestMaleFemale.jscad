@@ -12,7 +12,7 @@ function getParameterDefinitions() {
 function femaleEnd(trackLength){
     //Female End
     return union(
-        cylinder({d:5.5, h:6}).
+        cylinder({d:5.6, h:10.0}).
         translate([trackLength-4,18,0]),
         cube([3.5,3.5,6]).
         translate([trackLength-3,16.25,0]),
@@ -21,7 +21,9 @@ function femaleEnd(trackLength){
         translate([trackLength-10,11.5,0]),
         //Female relief right
         cube([10,1.75,6]).
-        translate([trackLength-10,22.75,0])
+        translate([trackLength-10,22.75,0]),
+        cube([12,12,3]).
+        translate([trackLength-10,12,6])
         )
 }
 
