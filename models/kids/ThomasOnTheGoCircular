@@ -1,0 +1,32 @@
+
+function track(){
+    return union(
+        square([25,6]),
+        square([2,8]).translate([-2,0,0]),
+        square([2,8]).translate([25,0,0]),
+        square([2,7]).translate([7,0,0]),
+        square([2,7]).translate([14.5,0,0]))
+}
+
+function track2(){
+    return difference(
+        square({size:[29,8],center:true}).
+        subtract(square([25,6]))
+        )
+}
+
+function main() {
+    //return rotate_extrude({fn:5},translate([2,0,0]),track())
+    return [
+    rotate_extrude({fn:500},
+        translate([30,0,0],track()))
+        .translate([0,0,0])
+]
+//return track()
+   /*
+    rotate_extrude( 
+       translate([4,0,0], 
+       circle({r: 1, fn: 30, center: true}) ) )
+    */
+    
+}
