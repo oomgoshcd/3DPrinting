@@ -12,7 +12,7 @@ function getParameterDefinitions() {
 function femaleEnd(trackLength){
     //Female End
     return union(
-        cylinder({d:6.0, h:10.0}).
+        cylinder({d:5.6, h:10.0}).
         translate([trackLength-4,18,0]),
         cube([3.5,3.5,6]).
         translate([trackLength-3,16.25,0]),
